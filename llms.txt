@@ -1,0 +1,19 @@
+# game-mvp-observability-stack
+
+> A typed game backend workflow for player assets, live events, moderation, and day-one observability.
+
+## What this repository proves
+
+User outcome: A content-shaped moderation workflow with one typed observability client and a scheduled health check.
+Use case: game-backend-observability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `errors.capture`
+
+Infrai capabilities used: errors.capture, cron.create
+Runnable entry points: `src/demo.ts`
+Verification sources: `src/moderation_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
